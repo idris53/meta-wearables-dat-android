@@ -9,11 +9,35 @@ By integrating this SDK, developers can reliably connect to Meta's AI glasses an
 The Wearables Device Access Toolkit is in developer preview.
 Developers can access our SDK and documentation, test on supported AI glasses, and create organizations and release channels to share with test users.
 
+## 🚀 Quick Start: Import as Module
+
+The CameraAccess sample has been converted into a reusable **Android library module** that you can directly import into your project!
+
+**For complete integration instructions**, see:
+- [**samples/CameraAccess/meta-wearables-dat/README.md**](samples/CameraAccess/meta-wearables-dat/README.md) - Quick start guide
+- [**samples/CameraAccess/MODULE_USAGE.md**](samples/CameraAccess/MODULE_USAGE.md) - Detailed integration guide
+
+### Import Options
+
+**Option 1: Git Submodule (Recommended)**
+```bash
+git submodule add https://github.com/facebook/meta-wearables-dat-android.git modules/meta-wearables-dat
+```
+
+**Option 2: Direct Copy**
+Copy `samples/CameraAccess/meta-wearables-dat` directory into your project.
+
+Then add to your `settings.gradle.kts`:
+```kotlin
+include(":meta-wearables-dat")
+project(":meta-wearables-dat").projectDir = file("path/to/meta-wearables-dat")
+```
+
 ## Documentation & Community
 
 Find our full [developer documentation](https://wearables.developer.meta.com/docs/develop/) on the Wearables Developer Center.
 
-You can find an overview of the Wearables Developer Center [here](https://wearables.developer.meta.com/).
+You can find an overview of the Wearables Developer Center [here](https://wearables.developer.com/).
 Create an account to stay informed of all updates, report bugs and register your organization.
 Set up a project and release channel to share your integration with test users.
 
